@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Lab3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lab 3</h1>
+    <p>First, I cloned the repo I made in the last lab into a folder called OriginalAssignment, then I copied the files into a new folder called NewAssignment and pushed it to the new github classroom repo.</p>
+    <img src="Pictures/15.png">
+    <p>I unpublished the old GitHub page and then switched to my new repo and setup a GitHub actions page. I made a new workflow and changed main.yml to deployment.yml</p>
+    <img src="Pictures/16.png">
+    <p>Next I added the name: command to name the action. I then used on: to tell GitHub when I want the action to run, which is when I push to the main branch. Then I added the first job projectdeploy: and runs-on: which says which OS I want the virtual machine to run from. After that I added a step for checkout which tells GitHub to grab the repo and put it onto the VM. Then I added permissions above to allow GitHub to read the repo and write to pages with the correct token. Before the repo was able to upload to pages, I had to make an artifact which shows GitHub which files the workflow commits, in this case using path: . to add all files in the folder. Finally, I added the deploy to pages action.</p>
+    <img src="Pictures/17.png">
+    <p>Finally, I linked my pages together using a hyperlink.</p>
+    <img src="Pictures/18.png">
+    <script src="script.js"></script>
+</body>
+</html>
